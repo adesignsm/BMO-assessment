@@ -3,10 +3,9 @@ Technical Questions and Answers
 Q1. How long did you spend on the coding assignment?
 A1: In total I spent almost 8 hours within two days.
     There are a couple thing I would add to my solution:
-    - Code Splitting to improve performance even if it is by a little bit (performance)
-    - Find a better solution than using preconncet as a resource hint (performance)
-    - Add a caching policy to drastically improve performance
-    - Error handling (performance)
+    - Code Splitting to improve performance even if it is by a little bit
+    - Find a better solution than using preconncet as a resource hint
+    - Add a caching policy to improve performance
     - I had used batching to switch between datasets but I wanted to come up with a better solution
     - Add more components to the page
     - Clear indication of results loading, results not available, and search does not exist (UX)
@@ -37,9 +36,7 @@ Q3. How would you track down a performance issue in production? Have you ever ha
 A3: What was stated in this assessment was to use lighthouse audit to track SEO, accessibility, and performance. Normally I would use lighthouse audit to track a variety of issues as it is very user friendly and robust. However there is another method that I have used in the past, similarily in the developer console you can access the "Network" tab and use the filter input to check for anomolies in the application.
 
 Q4. How would you improve the API that you just used?
-A4: Overall the API was easy to use, except that there was not an individual data object for images. 
-
-    - There are multiple ways of accessing one certain image, I think there should be one way to access them as this would reduce image data by a lot.
+A4: 
     - I woudl convert all jpg images in this API to text/html as these are drastically smaller in size.
     - I would like to make improvements to the response time and the load time as well.
 
