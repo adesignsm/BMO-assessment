@@ -100,7 +100,7 @@ const Search = () => {
         setShowAlphabeticalData(false);
     };
     
-    //the clodu platform I am using to host the project is returning tests as undefined
+    //the cloud platform(vercel) I am using to host the project is returning tests as undefined
     // test('It should not return an error', () => {
     //     const {input} = searchInput;
     //     fireEvent.change(input, {target: {value: ' '}})

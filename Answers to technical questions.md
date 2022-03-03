@@ -2,12 +2,13 @@ Technical Questions and Answers
 
 Q1. How long did you spend on the coding assignment?
 A1: In total I spent almost 8 hours within two days.
-    There are a couple thing I would add to my solution:
+    There are a couple things I would add to my solution:
     - Code Splitting to improve performance even if it is by a little bit
-    - Find a better solution than using preconncet as a resource hint
+    - Find a better solution than using preconncet or preload as a resource hint
     - Add a caching policy to improve performance
     - I had used batching to switch between datasets but I wanted to come up with a better solution
-    - Add more components to the page
+    - Add more components to the page, one for each book data set (alphabetical, publish year, raw) to have cleaner and more organized code.
+    - Optimize API get requests, maybe create an instance using axios?
     - Clear indication of results loading, results not available, and search does not exist (UX)
     - Add event listeneres to each book so users may click on a book, redirect to google, and show the user 
       results that allow the them to purcahse that book online (UX)
@@ -31,6 +32,7 @@ A2: A new feature that had been introudced in react 18 is called batching. It al
     };
 
     these batches are only triggered once their respective buttons are clicked.
+    I do want to come up with a better solution for this section. 
 
 Q3. How would you track down a performance issue in production? Have you ever had to do this?
 A3: What was stated in this assessment was to use lighthouse audit to track SEO, accessibility, and performance. Normally I would use lighthouse audit to track a variety of issues as it is very user friendly and robust. However there is another method that I have used in the past, similarily in the developer console you can access the "Network" tab and use the filter input to check for anomolies in the application.
