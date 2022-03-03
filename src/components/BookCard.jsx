@@ -1,9 +1,11 @@
 import React, {useState, useEffect, Fragment} from "react";
+import {render, fireEvent } from "@testing-library/react";
 import axios from "axios";
 
 const BOOK_API = process.env.REACT_APP_STARTER_API;
 const COVER_API = process.env.REACT_APP_BOOK_COVER_API;
 
+//default image for when images do not load in the results
 const defaultImage = "https://nnpbeta.wustl.edu/img/bookCovers/genericBookCover.jpg";
 
 const Search = () => {
@@ -97,6 +99,19 @@ const Search = () => {
         setShowRawData(false)
         setShowAlphabeticalData(false);
     };
+    
+
+    test('It should not return an error', () => {
+        const {input} = searchInput;
+        fireEvent.change(input, {target: {value: ' '}})
+        expect(input.value).toBe(' ');
+    });
+
+    test("It should return values", () => {
+        const {input} = searchInput;
+        fireEvent.change(input, {target: {value: "testing"}});
+        expect(input.value).toBe(bookResults);
+    });
 
     return (
         <Fragment> 
