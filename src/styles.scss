@@ -1,7 +1,52 @@
 body, html {
-    padding: 0;
+    padding: 2vw;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
 }
 
 .book-cover {
     width: 200px;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid #000;
+    font-size: 150%;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    display: block;
+    border: 1px solid #000;
+    background-color: transparent;
+    font-size: 150%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+ul {
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin: 1vw;
+}
+
+@media (min-width:1025px) and (max-width: 1920px) {
+    input, button {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    .book-data {
+        display: flex;
+        flex-wrap: wrap;
+
+        ul {
+            flex: 1 0 21%;
+        }
+    }
 }
