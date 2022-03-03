@@ -100,18 +100,18 @@ const Search = () => {
         setShowAlphabeticalData(false);
     };
     
+    //the clodu platform I am using to host the project is returning tests as undefined
+    // test('It should not return an error', () => {
+    //     const {input} = searchInput;
+    //     fireEvent.change(input, {target: {value: ' '}})
+    //     expect(input.value).toBe(' ');
+    // });
 
-    test('It should not return an error', () => {
-        const {input} = searchInput;
-        fireEvent.change(input, {target: {value: ' '}})
-        expect(input.value).toBe(' ');
-    });
-
-    test("It should return values", () => {
-        const {input} = searchInput;
-        fireEvent.change(input, {target: {value: "testing"}});
-        expect(input.value).toBe(bookResults);
-    });
+    // test("It should return values", () => {
+    //     const {input} = searchInput;
+    //     fireEvent.change(input, {target: {value: "testing"}});
+    //     expect(input.value).toBe(bookResults);
+    // });
 
     return (
         <Fragment> 
